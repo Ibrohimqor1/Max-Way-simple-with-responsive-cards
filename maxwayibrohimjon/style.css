@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Proxima-Nova, sans-serif;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.nav {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 89px;
+    background: #fff;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav ul li {
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+
+}
+
+.right-nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.right-nav img {
+    padding: 0 20px;
+    align-items: center;
+}
+
+.li1 {
+    --primary-color: #51267d;
+}
+
+.left-nav img {
+    padding: 0 10px;
+}
+
+.left-nav a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #51267d;
+    font-family: Proxima-Nova, sans-serif;
+}
+
+.left-nav button {
+
+    color: #fff;
+    padding: 10px 25px !important;
+    font-size: 16px;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: transform .2s ease-in-out;
+    font-family: Proxima-Nova;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 8px;
+    letter-spacing: normal;
+    text-transform: none;
+    background-color: #51267D;
+}
+
+/* header starts */
+header {
+    background: url(https://cdn.delever.uz/delever/be437531-341e-4a4b-bfac-0fbee5496be1) no-repeat center center/cover;
+    width: 100%;
+    height: 70vh;
+}
+
+/* section starts */
+.section {
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+
+
+}
+
+.section a {
+    text-decoration: none;
+    color: black;
+    background: #fdf184;
+    border: 3px solid white;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 12px
+}
+
+section h1 {
+    padding: 25px;
+    text-align: center;
+}
+
+/* section card */
+.card1 {
+    width: 280px;
+    height: 450px;
+
+    border-radius: 12px;
+    padding: 15px 7px;
+
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.cards img {
+
+    width: 100%;
+
+}
+
+.left-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+}
+
+.left-card button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 10px;
+    font-family: Proxima-Nova, sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(81, 38, 125, .08);
+    padding: 10px 15px;
+    color: var(--primary-color);
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px !important;
+
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.h1-acrds {
+    text-align: center;
+    padding: 25px 0;
+}
+
+@media all and (max-width:1216px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        margin: 15px 25px;
+
+    }
+
+}
+
+@media all and (max-width:952px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px 25px;
+
+
+    }
+
+    header {
+        background: url(https://cdn.delever.uz/delever/be437531-341e-4a4b-bfac-0fbee5496be1) no-repeat center center/cover;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .left-nav {
+        display: block;
+    }
+
+
+}
+@media all and (max-width:600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    header {
+        background: url(https://cdn.delever.uz/delever/be437531-341e-4a4b-bfac-0fbee5496be1) no-repeat   center/cover;
+        width: 80%;
+        height: 50vh;
+  
+    }
+
+    .left-nav {
+        display: block;
+    }
+
+
+}
+@media all and (max-width:852px){
+   
+       
+    .container {
+      width: 100%;
+    }
+ 
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 50%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+     .li1 {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover .active {
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+
+
+
+
+@media all and (max-width:400px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    header {
+        background: url(https://cdn.delever.uz/delever/be437531-341e-4a4b-bfac-0fbee5496be1) no-repeat   center/cover;
+        width: 200%;
+        height: 35vh;
+       margin-left: 10px;
+        background-position: 100%;
+    }
+
+    .left-nav {
+        display: block;
+    }
+
+
+}
+
+
+
+@media all and (max-width:200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        text-align: center;
+        padding: 20px 10px;
+        margin-left: 200px;
+        margin-top: 25px;
+
+
+
+    }
+
+    .left-nav {
+        display: block;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
